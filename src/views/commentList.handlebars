@@ -1,0 +1,17 @@
+<h1>List of comments (# {{{postId}}})</h1>
+
+{{#if comments}}
+
+<div class="container">
+    {{#each comments}}
+    <div class="box">
+        <div class="primary">{{{this.name}}}</div>
+        <div class="content">{{{this.body}}}</div>
+        <div class="secondary">Comment with id: {{{this.id}}}</div>
+        <div class="secondary">Email: {{{this.email}}}</div>
+        <div class="secondary">Post Id: {{{this.postId}}}</div>
+    </div>
+    {{/each}}
+</div>
+
+{{/if}}

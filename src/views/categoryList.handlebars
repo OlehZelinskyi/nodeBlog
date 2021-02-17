@@ -1,0 +1,14 @@
+<h1>List of Categories</h1>
+
+{{#if categories}}
+
+<div class="container">
+    {{#each categories}}
+    <div class="box">
+        <div class="primary">{{{this.name}}}</div>
+        <div class="secondary">Category with id: {{{this.id}}}</div>
+    </div>
+    {{/each}}
+</div>
+
+{{/if}}

@@ -30,6 +30,16 @@ class PostsController {
       return res.send(error);
     }
   }
+  static async addPost(req, res) {
+    const { body: data } = req;
+    try {
+      await PostsService.addPost(data);
+
+      res.redirect("../posts");
+    } catch (error) {
+      return res.send(error);
+    }
+  }
 }
 
 export default PostsController;

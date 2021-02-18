@@ -12,4 +12,26 @@
     {{{body}}}
 </body>
 
+<script>
+    const createPostRequest = (e) => {
+        e.preventDefault();
+        // @ts-ignore
+        const meta = new FormData(e.target);
+        const entries = Array.from(meta);
+        const data = Object.fromEntries(entries);
+
+        fetch('http://{{HOST}}:{{PORT}}/post/new', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(res => {
+            if (res.redirected) {
+                window.location.href = res.url
+            }
+        });
+    };
+</script>
+
 </html>

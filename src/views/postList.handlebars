@@ -1,0 +1,16 @@
+<h1>List of posts by category (# {{{categoryId}}})</h1>
+
+{{#if posts}}
+
+<div class="container">
+    {{#each posts}}
+    <div class="box">
+        <div class="primary">{{{this.title}}}</div>
+        <div class="content">{{{this.content}}}</div>
+        <div class="secondary">Post with id: {{{this.$loki}}}</div>
+        <div class="secondary">Category Id: {{{this.categoryId}}}</div>
+    </div>
+    {{/each}}
+</div>
+
+{{/if}}

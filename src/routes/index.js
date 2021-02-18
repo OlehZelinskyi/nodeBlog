@@ -1,14 +1,15 @@
 import express from "express";
-import comments from "./comments/index.js";
 import posts from "./posts/index.js";
+import categories from "./categories/index.js";
 
 const router = express.Router();
+const { PORT, HOST } = process.env;
 
-router.use(comments);
 router.use(posts);
+router.use(categories);
 
 router.get("/", (req, res) => {
-  res.send("Status OK");
+  res.render("newPost", { PORT, HOST });
 });
 
 export default router;

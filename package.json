@@ -6,7 +6,15 @@
   "type": "module",
   "scripts": {
     "start": "cross-env PORT=3000 nodemon -r dotenv/config ./src/index.js",
-    "debug": "cross-env PORT=4000 nodemon --inspect -r dotenv/config ./src/index.js"
+    "debug": "cross-env PORT=4000 nodemon --inspect -r dotenv/config ./src/index.js",
+    "db:create": "node_modules/.bin/sequelize db:create",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate",
+    "db:migrate:undo": "node_modules/.bin/sequelize db:migrate:undo",
+    "db:migrate:undo:all": "node_modules/.bin/sequelize db:migrate:undo:all",
+    "db:seed:all": "node_modules/.bin/sequelize db:seed:all",
+    "db:seed:undo:all": "node_modules/.bin/sequelize db:seed:undo:all",
+    "model:generate": "node_modules/.bin/sequelize model:generate",
+    "seed:generate": "node_modules/.bin/sequelize seed:generate"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -14,10 +22,13 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
-    "lokijs": "^1.5.11"
+    "lokijs": "^1.5.11",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
   }
 }

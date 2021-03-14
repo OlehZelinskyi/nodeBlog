@@ -10,13 +10,16 @@
         <textarea id="content" name="content"></textarea>
     </div>
 
+    {{#if categoriesOptions}}
     <div class="form-group">
-        <label for="categoryId">Category:</label>
-        <select id="categoryId" name="categoryId">
-            <option value="1">Weird</option>
-            <option value="2">Awesome</option>
+        <label for="category_id">Category:</label>
+        <select id="category_id" name="category_id">
+            {{#each categoriesOptions}}
+            <option value={{{this.id}}}>{{{this.title}}}</option>
+            {{/each}}
         </select>
     </div>
+    {{/if}}
 
     <button type="submit">Create Post</button>
 </form>

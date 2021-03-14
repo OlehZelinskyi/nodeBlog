@@ -4,8 +4,12 @@ class CategoriesController {
   static async getCategories(req, res) {
     try {
       const response = await CategoriesService.getCategories();
-
-      res.render("categoryList", { categories: response });
+      const dataToRender = response.map((category) => ({
+        ...category,
+        createdAt: category.createdAt.toLocaleString(),
+        updatedAt: category.updatedAt.toLocaleString(),
+      }));
+      res.render("categoryList", { categories: dataToRender });
     } catch (error) {
       return res.send(error);
     }

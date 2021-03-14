@@ -1,4 +1,4 @@
 {
   "watch": ["src"],
-  "ext": "js,json,handlebars"
+  "ext": "cjs,js,json,handlebars"
 }

@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "module": "es2020",
+        "target": "es6",
         "checkJs": true,
         "moduleResolution": "node",
         "lib": ["es2019"]

@@ -1,11 +1,8 @@
-// import axios from "axios";
-import db from "../../db/index.js";
-import utils from "../../utils/index.js";
+// @ts-ignore
+import db from "../../models/index.cjs";
 
 const getCategories = async () => {
-  // return axios.get(`https://jsonplaceholder.typicode.com/posts`);
-  await utils.delay(3000);
-  return db.categories.find({});
+  return db.Category.findAll({ raw: true });
 };
 
 export default {

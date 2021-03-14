@@ -1,30 +1,30 @@
-import db from "../../db/index.js";
+// @ts-ignore
+import db from "../../models/index.cjs";
 import utils from "../../utils/index.js";
-// import axios from "axios";
 
 const getPostById = async (id) => {
-  await utils.delay(3000);
-  return db.posts.findOne({ $loki: Number(id) });
-  // return axios.get(`https://jsonplaceholder.typicode.com/Posts/${id}`);
+  return db.Article.findOne({
+    where: { id },
+    raw: true,
+  });
 };
 
 const getPostsByCategoryId = async (categoryId) => {
-  await utils.delay(3000);
-  return db.posts.find({ categoryId: Number(categoryId) });
-  // return axios.get(
-  //   `https://jsonplaceholder.typicode.com/Posts?postId=${postId}`
-  // );
+  return db.Article.findAll({
+    where: { category_id: categoryId },
+    raw: true,
+  });
 };
 
 const getAllPosts = async () => {
-  await utils.delay(3000);
-  return db.posts.find({});
-  // return axios.get(`https://jsonplaceholder.typicode.com/posts`);
+  return db.Article.findAll({
+    raw: true,
+  });
 };
 
 const addPost = async (data) => {
-  await utils.delay(3000);
-  return db.posts.insertOne(data);
+  const newlyCreated = await db.Article.create(data);
+  return newlyCreated.get({ plain: true });
 };
 
 export default {

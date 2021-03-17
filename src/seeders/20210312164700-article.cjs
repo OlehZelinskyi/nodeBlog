@@ -12,8 +12,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Juices and more juices",
@@ -22,8 +20,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Bread and butter - everywhere",
@@ -32,8 +28,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Season hit - strawberries",
@@ -42,8 +36,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Worlds Fashion Contest",
@@ -52,8 +44,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 3,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Gucci vs Versacci",
@@ -62,8 +52,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 3,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Chelsea - Manchester United",
@@ -72,8 +60,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Leeds - Derby",
@@ -82,8 +68,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Manchester City - Fullham",
@@ -92,8 +76,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Arsenal - Everton",
@@ -102,8 +84,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Barcelona - Valencia",
@@ -112,8 +92,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Harry Potter new novel",
@@ -122,8 +100,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 4,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "Assassin's Creed: Heresy",
@@ -132,8 +108,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 4,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
         {
           title: "The Witcher: Wild Hunt",
@@ -142,8 +116,6 @@ module.exports = {
                     Commodo tempor sit ex laborum dolore. Lorem ullamco exercitation adipisicing deserunt esse reprehenderit elit. Incididunt officia velit et pariatur duis ut est magna ullamco tempor Lorem Lorem. Ea dolore est reprehenderit anim.
                     Culpa et et nostrud duis. Do et sunt anim occaecat. Quis et deserunt minim nostrud. Officia eiusmod tempor ullamco eu excepteur pariatur non commodo fugiat. In aliquip nostrud magna ea adipisicing. Voluptate proident proident fugiat ea minim.`,
           category_id: 4,
-          createdAt: new Date(),
-          updatedAt: new Date(),
         },
       ],
       {}

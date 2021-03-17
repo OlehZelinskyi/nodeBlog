@@ -11,5 +11,11 @@
         "sourceType": "module"
     },
     "rules": {
+        "import/extensions": "off",
+        "consistent-return": "off",
+        "no-underscore-dangle": "off",
+        "no-console": "off",
+        "global-require": "off",
+        "import/no-dynamic-require": "off"
     }
 }

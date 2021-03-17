@@ -1,4 +1,4 @@
-import { PostsService } from "../../services/index.js";
+import { PostsService } from '../../services/index.js';
 
 class PostsController {
   static async getPostById(req, res) {

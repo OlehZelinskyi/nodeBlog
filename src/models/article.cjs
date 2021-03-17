@@ -1,14 +1,15 @@
-const { Model } = require("sequelize");
+const { Model } = require('sequelize');
+
 module.exports = class Article extends Model {
-  static init = (sequelize, DataTypes) =>
-    super.init(
+  static init(sequelize, DataTypes) {
+    return super.init(
       {
         title: {
           type: DataTypes.STRING,
           validate: {
             len: {
               args: [5, 100],
-              msg: "Title must be between 5 and 100 chars",
+              msg: 'Title must be between 5 and 100 chars',
             },
           },
         },
@@ -17,7 +18,7 @@ module.exports = class Article extends Model {
           validate: {
             len: {
               args: [5, 1000],
-              msg: "Content must be between 5 and 1000 chars",
+              msg: 'Content must be between 5 and 1000 chars',
             },
           },
         },
@@ -25,11 +26,12 @@ module.exports = class Article extends Model {
       },
       {
         sequelize,
-        modelName: "Article",
-      }
+        modelName: 'Article',
+      },
     );
-
-  static associate(models) {
-    // define association here
   }
+
+  // static associate(models) {
+  //   // define association here
+  // }
 };

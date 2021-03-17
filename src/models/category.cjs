@@ -1,18 +1,19 @@
-const { Model } = require("sequelize");
+const { Model } = require('sequelize');
 
 module.exports = class Category extends Model {
-  static init = (sequelize, DataTypes) =>
-    super.init(
+  static init(sequelize, DataTypes) {
+    return super.init(
       {
         title: DataTypes.STRING,
       },
       {
         sequelize,
-        modelName: "category",
-      }
+        modelName: 'category',
+      },
     );
-
-  static associate(models) {
-    // define association here
   }
+
+  // static associate(models) {
+  //   // define association here
+  // }
 };

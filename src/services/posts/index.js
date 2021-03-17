@@ -1,6 +1,5 @@
 // @ts-ignore
 import db from "../../models/index.cjs";
-import utils from "../../utils/index.js";
 
 const getPostById = async (id) => {
   return db.Article.findOne({

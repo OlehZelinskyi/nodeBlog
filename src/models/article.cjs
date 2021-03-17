@@ -8,7 +8,7 @@ module.exports = class Article extends Model {
           validate: {
             len: {
               args: [5, 100],
-              msg: "Title must be between 5 and 1000 chars",
+              msg: "Title must be between 5 and 100 chars",
             },
           },
         },

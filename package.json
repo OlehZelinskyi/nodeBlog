@@ -4,6 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=14.6.0",
+    "npm": ">=6.14.6",
+    "yarn": ">=1.22.5"
+  },
   "scripts": {
     "start": "cross-env PORT=3000 nodemon -r dotenv/config ./src/index.js",
     "debug": "cross-env PORT=4000 nodemon --inspect -r dotenv/config ./src/index.js",
@@ -14,21 +19,32 @@
     "db:seed:all": "node_modules/.bin/sequelize db:seed:all",
     "db:seed:undo:all": "node_modules/.bin/sequelize db:seed:undo:all",
     "model:generate": "node_modules/.bin/sequelize model:generate",
-    "seed:generate": "node_modules/.bin/sequelize seed:generate"
+    "seed:generate": "node_modules/.bin/sequelize seed:generate",
+    "lint": "eslint --fix --ext .js,.cjs .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js, cjs}": [
+      "yarn lint",
+      "git add"
+    ]
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "lokijs": "^1.5.11",
+    "joi": "^17.4.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.5.0"
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "nodemon": "^2.0.7",
-    "sequelize-cli": "^6.2.0"
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
+    "nodemon": "^2.0.7"
   }
 }

@@ -1,36 +1,18 @@
-"use strict";
-
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
+  up: async (queryInterface) => {
     await queryInterface.bulkInsert(
-      "categories",
+      'categories',
       [
-        {
-          title: "Sport",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          title: "Food",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          title: "Fashion",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          title: "Books",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
+        { title: 'Sport' },
+        { title: 'Food' },
+        { title: 'Fashion' },
+        { title: 'Books' },
       ],
-      {}
+      {},
     );
   },
 
-  down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete("categories", null, {});
+  down: async (queryInterface) => {
+    await queryInterface.bulkDelete('categories', null, {});
   },
 };

@@ -22,7 +22,7 @@ module.exports = class Article extends Model {
             },
           },
         },
-        category_id: DataTypes.INTEGER,
+        categoryId: DataTypes.INTEGER,
       },
       {
         sequelize,
@@ -31,7 +31,7 @@ module.exports = class Article extends Model {
     );
   }
 
-  // static associate(models) {
-  //   // define association here
-  // }
+  static associate({ Category }) {
+    this.belongsTo(Category, { foreignKey: 'categoryId' });
+  }
 };

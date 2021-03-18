@@ -1,13 +1,16 @@
 // @ts-ignore
 import db from '../../models/index.cjs';
 
-const getPostById = async (id) => db.Article.findOne({
-  where: { id },
-  raw: true,
+const getPostById = async (id) => db.Article.findByPk(id, {
+  attributes: ['id', 'title', 'content'],
+  include: [{
+    model: db.Category,
+    attributes: ['title'],
+  }],
 });
 
 const getPostsByCategoryId = async (categoryId) => db.Article.findAll({
-  where: { category_id: categoryId },
+  where: { categoryId },
   raw: true,
 });
 

@@ -9,14 +9,15 @@ module.exports = {
       },
       title: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
       content: {
         type: Sequelize.TEXT,
+        allowNull: false,
       },
-      category_id: {
+      categoryId: {
         type: Sequelize.INTEGER,
-        model: 'categories',
-        key: 'id',
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,

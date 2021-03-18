@@ -11,5 +11,5 @@ export const getPostsByCategoryIdSchema = joi.object({
 export const addPostSchema = joi.object({
   title: joi.string().min(5).max(100).required(),
   content: joi.string().min(5).max(1000).required(),
-  category_id: joi.number().min(1).integer().required(),
+  categoryId: joi.number().min(1).integer().required(),
 });

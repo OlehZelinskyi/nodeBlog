@@ -13,7 +13,7 @@ module.exports = class Category extends Model {
     );
   }
 
-  // static associate(models) {
-  //   // define association here
-  // }
+  static associate({ Article }) {
+    this.hasMany(Article);
+  }
 };

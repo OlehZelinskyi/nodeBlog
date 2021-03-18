@@ -17,10 +17,10 @@ class PostsController {
       const { categoryId } = req.query;
       let response;
 
-      if (categoryId) {
-        response = await PostsService.getPostsByCategoryId(categoryId);
-      } else {
+      if (Number.parseInt(categoryId, 10) === 0) {
         response = await PostsService.getAllPosts();
+      } else {
+        response = await PostsService.getPostsByCategoryId(categoryId);
       }
 
       res.send(response);

@@ -3,6 +3,7 @@ import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import bodyParser from 'body-parser';
 import router from './routes/index.js';
+import { errorMiddleware } from './middlewares/index.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const { PORT, HOST } = process.env;
@@ -11,6 +12,7 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(errorMiddleware);
 
 app.use(router);
 
